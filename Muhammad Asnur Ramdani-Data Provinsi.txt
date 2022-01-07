@@ -24,7 +24,7 @@ class Provinsi:
         print("DATA PROVINSI")
         print("="*16)
         print()
-        order = input("Urutan Data ASC/DESC : ")
+        order = input("Urutan Data ASC/DESC : ").upper()
         page = int(input("Halaman : "))
         self.dataProvinsi(order, page)
         again = input("Lihat Data Lainnya (Y/N) : ").upper()
