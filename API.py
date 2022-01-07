@@ -23,19 +23,11 @@ class Provinsi:
         print("DATA PROVINSI")
         print("="*16)
         print()
-
         order = input("Urutan Data ASC/DESC : ")
         page = int(input("Halaman : "))
-        # data = Provinsi(order, page)
-
         self.dataProvinsi(order, page)
-
         again = input("Lihat Data Lainnya (Y/N) : ").upper()
-
         if again == "Y":
             self.preview()
 
-
-view = Provinsi()
-
-view.preview()
+Provinsi().preview()
