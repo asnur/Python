@@ -10,6 +10,7 @@ class Provinsi:
     def dataProvinsi(self, order = "ASC", page=1):
         header = ['No', 'Nama Provinsi']
         response = requests.get(self.url).json()['provinsi']
+        self.data = []
         for i in range(len(response)):
             self.data.append([i+1, response[i]['nama']])
         start = self.total_data * (page -1)
